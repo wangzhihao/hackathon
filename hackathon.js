@@ -9,6 +9,13 @@ $( document ).ready(function() {
 		e.preventDefault();
 	});
 
+	$("#take_action").on('click', function(e){
+		$("#icpiframe").fadeout();
+		$("#removaliframe").fadein();
+		e.preventDefault();
+	});
+	
+
 	$("#amazon-sort").on('click', function() {
 		$("#amazon-list").toggleClass("sorted");
 	});
