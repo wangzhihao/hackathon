@@ -1,1 +1,3 @@
 *.swp
+.sass-cache/
+bower_components/
