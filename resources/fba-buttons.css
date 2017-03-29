@@ -47,7 +47,7 @@
 .amznBtn,
 .amznBtn span {
   background-color: transparent;
-  background-image: url('images/fba/btn-sprite.png');
+  background-image: url('./btn-sprite.png');
   background-repeat: no-repeat;
 }
 .amznBtn span img {
