@@ -10,8 +10,8 @@ $( document ).ready(function() {
 	});
 
 	$("#take_action").on('click', function(e){
-		$("#icpiframe").fadeout();
-		$("#removaliframe").fadein();
+		$("#icpiframe", window.parent.document).fadeOut();
+		$("#removaliframe", window.parent.document).fadeIn();
 		e.preventDefault();
 	});
 	
