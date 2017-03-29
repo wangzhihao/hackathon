@@ -18,6 +18,12 @@
 .right {
   text-align: right; }
 
+#amazon-list #item_1.in.collapse a {
+  background: white; }
+#amazon-list .star {
+  position: absolute;
+  top: 11px;
+  right: 30px; }
 #amazon-list #item_1, #amazon-list #item_2, #amazon-list #item_3, #amazon-list #item_4 {
   top: 0;
   position: relative;
