@@ -1,0 +1,157 @@
+
+.right {
+    text-align: right;
+}
+
+.error-border {
+    border: 1px solid #FF0000;
+    padding: 1px;
+}
+
+.si-disabled-field {
+    background: #eceae9;
+}
+
+.si-disabled-text {
+    color: #999 !important;
+}
+
+/* Cash on Delivery Classes */
+
+.cod-text-input {
+    width: 5em;
+}
+
+.item-table-cod-unit-cost,
+.item-table-cod-unit-tax {
+    min-width: 7em;
+}
+
+.item-table-cod-unit-total {
+    min-width: 8em;
+}
+
+/* Scheduled Delivery Classes */
+#sd-calendar-loader {
+}
+
+.sd-calendar-loader-img {
+    width: 120px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+.sd-calendar {
+    background-color: #ffffff;
+}
+
+.sd-calendar-legend {
+    text-align: center;
+    padding: 0 10px 10px 10px;
+}
+
+.sd-calendar-swatch {
+    text-align: center;
+    border: 1px solid #c1dcf2;
+    padding: 0 0.5em 0 0.5em;
+    margin: 0 0.5em 0 0.5em;
+}
+
+.slot-unavailable {
+    background-color: #f0f0f0;
+}
+
+.slot-available {
+    background-color: #fff;
+}
+
+.slot-selected {
+    background-color: #e47911;
+}
+
+.sd-calendar-nav {
+    padding: 4px 10px 4px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sd-calendar-nav .dashed-bar {
+    border-top-color: #ccc;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-color: #000;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+.sd-calendar-nav span {
+    display: inline-block;
+    padding: 4px;
+}
+
+.sd-calendar-nav .scroll {
+    width: 45px;
+    border: 1px solid #f0f0f0;
+    color: #d0d0d0;
+}
+
+.sd-calendar-nav .scroll-left {
+    float: left;
+}
+
+.sd-calendar-nav .scroll-right {
+    float: right;
+}
+
+.scroll-enabled {
+    color: #e47911 !important;
+}
+
+span.scroll-enabled:hover {
+    cursor: pointer;
+}
+
+.sd-calendar-content {
+    clear: both;
+    padding: 4px 10px 10px 0;
+}
+
+.sd-calendar-timeslots {
+    text-align: center;
+    font-size: 9px;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.sd-calendar-timeslots .slot-header {
+     background-color: #eaf3fe;
+}
+
+.sd-calendar-timeslots th,
+.sd-calendar-timeslots td {
+    border: 1px solid #c1dcf2;
+    height: 40px;
+}
+
+.sd-calendar-timeslots span {
+    display: block;
+}
+
+.slot-row td.slot-available:hover {
+    cursor: pointer;
+}
+
+.slot-focus {
+    border: 2px solid #e47911;
+    height: 100%;
+}
+
+span.removal-expedite-description {
+    margin-left: 2em;
+}
+.removal-speed-display {
+    display: none;
+}
