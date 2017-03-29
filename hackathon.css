@@ -18,4 +18,24 @@
 .right {
   text-align: right; }
 
+#amazon-list #item_1, #amazon-list #item_2, #amazon-list #item_3, #amazon-list #item_4 {
+  top: 0;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease; }
+
+#amazon-list.sorted {
+  /*#item_3 {
+  	top : 80px;
+  }*/ }
+  #amazon-list.sorted #item_4 {
+    top: -240px; }
+  #amazon-list.sorted #item_1 {
+    top: 80px; }
+  #amazon-list.sorted #item_2 {
+    top: 160px; }
+
 /*# sourceMappingURL=hackathon.css.map */
