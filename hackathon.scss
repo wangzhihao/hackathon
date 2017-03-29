@@ -27,7 +27,12 @@
 	.star{
 		position: absolute;
 	    top: 11px;
-	    right: 30px;
+	    right: 25px;
+	}
+	.remove{
+		position: absolute;
+	    bottom: -9px;
+	    right: 25px;
 	}
 	#item_1, #item_2, #item_3, #item_4{
 		top : 0;
