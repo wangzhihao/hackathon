@@ -1,0 +1,10 @@
+if(typeof SCS==="undefined"){window.SCS={};
+}if(typeof SCS.SCITS==="undefined"){window.SCS.SCITS={};
+}SCS.SCITS.appendAndSendMetrics=function(inputParams){var combinedMetrics={},clientProgrmJson={ClientProgram:{value:inputParams.clientProgram+":"+inputParams.associatedFeature,metricType:"property_metric"}};
+if(typeof window.SCS.SCITS.CommonMetric!=="undefined"){jQuery.extend(combinedMetrics,clientProgrmJson,window.SCS.SCITS.CommonMetric);
+}SCS.SCITS.sendMetrics(combinedMetrics,inputParams.associatedFeature);
+};
+SCS.SCITS.sendMetrics=function(metricJson,associatedFeature){var recordMetricsUrl="/gp/scits/scs-record-metrics.html",data;
+if(typeof JSON!=="undefined"&&typeof JSON.stringify==="function"){data=JSON.stringify(metricJson);
+jQuery.ajax({url:recordMetricsUrl,data:{associatedFeature:associatedFeature,metricData:data},cache:false,dataType:"json",method:"post"});
+}};
