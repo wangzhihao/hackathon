@@ -40,6 +40,8 @@
   -webkit-animation-fill-mode: forwards;
   animation: disapear 1s;
   animation-fill-mode: forwards; }
+#amazon-list .link {
+  background-color: transparent !important; }
 @-webkit-keyframes disapear {
   50% {
     -webkit-transform: translateX(-5%);
