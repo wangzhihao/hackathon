@@ -19,10 +19,13 @@
 	text-align: right;
 }
 #amazon-list{
-	#item_1.in.collapse{
+	.in.collapse{
 		a.list-group-item {
 			background: white;   
-   }	
+   }
+   .badge {
+   		margin-left: 5px;
+   }
 }
 $size: 20px;
 .star{

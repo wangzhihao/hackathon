@@ -18,8 +18,10 @@
 .right {
   text-align: right; }
 
-#amazon-list #item_1.in.collapse a.list-group-item {
+#amazon-list .in.collapse a.list-group-item {
   background: white; }
+#amazon-list .in.collapse .badge {
+  margin-left: 5px; }
 #amazon-list .star {
   position: absolute;
   top: 11px;
