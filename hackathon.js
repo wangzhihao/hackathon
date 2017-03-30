@@ -12,14 +12,17 @@ $( document ).ready(function() {
 	document.body.addEventListener('animationend', removeElement);
 	document.body.addEventListener('webkitAnimationEnd', removeElement);
 
-	$(".sc-mobile-icon.sc-menu-trigger.sc-snes-top-a").on('click', function(e){
-		$("#spaui").toggleClass("hack_animate");
-		e.preventDefault();
-	});
-	$("#spaui-close").on('click', function(e){
-		$("#spaui").toggleClass("hack_animate");
-		e.preventDefault();
-	});
+	//update notifictation count
+	setInterval(function(){ 
+		var count = $("#amazon-list a").length;
+		if(count == 0){
+			$("#sc-snes-number", window.parent.document).hide();
+		}else{
+			$("#sc-snes-number", window.parent.document).text(count);
+			if(!$("#sc-snes-number", window.parent.document).is(":visible"))
+				$("#sc-snes-number", window.parent.document).show();
+		}
+	}, 500);
 
 	$("#take_action").on('click', function(e){
 		$("#icpiframe", window.parent.document).fadeOut();
