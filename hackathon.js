@@ -28,9 +28,9 @@ $( document ).ready(function() {
 		e.preventDefault();
 	});
 
-	$("#amazon-list .remove").on('click', function(e){
+	$("#amazon-list .remove button").on('click', function(e){
 		$(this).closest(".list-group-item").addClass('removed');
-		e.preventDefault();
+		e.stopPropagation();
 	});
 
 	$("#amazon-sort").on('click', function() {
