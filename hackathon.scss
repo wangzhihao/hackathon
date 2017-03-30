@@ -1,48 +1,86 @@
 #spaui{
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
 }
 .hack_animate {
-  right: 0 !important; 
+	right: 0 !important; 
 }
 .amazon-yellow {
 	background-color: #f0c14b;
 }
 .well {
-    margin-bottom: 0px;
-    border-bottom: none;
+	margin-bottom: 0px;
+	border-bottom: none;
 }
 .right{
 	text-align: right;
 }
 #amazon-list{
 	#item_1.in.collapse{
-	   a {
-	     background: white;   
-	   }	
-	}
-	$size: 20px;
-	.star{
-		position: absolute;
-	    top: 11px;
-	    right: $size;
-	}
-	.remove{
-		text-align: right;
-		margin: 0px;
-	}
-	#item_1, #item_2, #item_3, #item_4{
-		top : 0;
-		position: relative;
-		-webkit-transition: all 1s ease;
-	  -moz-transition: all 1s ease;
-	  -o-transition: all 1s ease;
-	  -ms-transition: all 1s ease;
-	  transition: all 1s ease;
-	}
+		a {
+			background: white;   
+   }	
+}
+$size: 20px;
+.star{
+	position: absolute;
+	top: 11px;
+	right: $size;
+}
+.remove{
+	text-align: right;
+	margin: 0px;
+}
+#item_1, #item_2, #item_3, #item_4{
+	top : 0;
+	position: relative;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.removed {
+
+	-webkit-animation: disapear 1s;
+	-webkit-animation-fill-mode: forwards; 
+	animation: disapear 1s;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes disapear{
+
+	50% {
+
+		-webkit-transform: translateX(-5%);
+		transform: translateX(-5%);
+  }
+
+  100% {
+	  -webkit-transform: translateX(200%);
+	  transform: translateX(200%); 
+  }    
+}
+
+@keyframes disapear{
+
+	50% {
+
+		-webkit-transform: translateX(-5%);
+		transform: translateX(-5%);
+  }
+
+  100% {
+	  -webkit-transform: translateX(200%);
+	  transform: translateX(200%); 
+  }    
+}
+
+
 
 }
 #amazon-list.sorted {
@@ -50,14 +88,14 @@
 	$unit: 103px;
 	#item_4 {
 		top: -3 * $unit;
-	}
-	#item_1 {
-		top : $unit;
-	}
-	#item_2 {
-		top : 2 * $unit;
-	}
-	/*#item_3 {
-		top : 80px;
-	}*/
+}
+#item_1 {
+	top : $unit;
+}
+#item_2 {
+	top : 2 * $unit;
+}
+/*#item_3 {
+top : 80px;
+}*/
 }

@@ -35,10 +35,28 @@
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease; }
-
+#amazon-list .removed {
+  -webkit-animation: disapear 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation: disapear 1s;
+  animation-fill-mode: forwards; }
+@-webkit-keyframes disapear {
+  50% {
+    -webkit-transform: translateX(-5%);
+    transform: translateX(-5%); }
+  100% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%); } }
+@keyframes disapear {
+  50% {
+    -webkit-transform: translateX(-5%);
+    transform: translateX(-5%); }
+  100% {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%); } }
 #amazon-list.sorted {
   /*#item_3 {
-  	top : 80px;
+  top : 80px;
   }*/ }
   #amazon-list.sorted #item_4 {
     top: -309px; }
