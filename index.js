@@ -8,4 +8,11 @@ $( document ).ready(function() {
 		$("#spaui").toggleClass("hack_animate");
 		e.preventDefault();
 	});
+
+	$("#take_action2").on('click', function(e){
+		$("#icpiframe", window.parent.document).fadeOut();
+		$("#removaliframe", window.parent.document).fadeIn();
+		//$("#spaui", window.parent.document).toggleClass("hack_animate");
+		e.preventDefault();
+	});
 });
