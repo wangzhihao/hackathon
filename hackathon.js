@@ -36,7 +36,8 @@ $( document ).ready(function() {
 		e.stopPropagation();
 	});
 
-	$("#amazon-sort").on('click', function() {
+    $("#amazon-list").addClass("sorted");
+	$("a.amazon-sort").on('click', function() {
 		$("#amazon-list").toggleClass("sorted");
 	});
 });
