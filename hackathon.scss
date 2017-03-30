@@ -52,6 +52,10 @@ $size: 20px;
 	animation-fill-mode: forwards;
 }
 
+.link{
+    background-color: transparent !important;
+}
+
 @-webkit-keyframes disapear{
 
 	50% {
@@ -79,8 +83,6 @@ $size: 20px;
 	  transform: translateX(200%); 
   }    
 }
-
-
 
 }
 #amazon-list.sorted {
