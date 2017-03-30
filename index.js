@@ -12,7 +12,7 @@ $( document ).ready(function() {
 	$("#take_action2").on('click', function(e){
 		$("#icpiframe", window.parent.document).fadeOut();
 		$("#settingsiframe", window.parent.document).fadeIn();
-		//$("#spaui", window.parent.document).toggleClass("hack_animate");
+		$("#spaui", window.parent.document).toggleClass("hack_animate");
 		e.preventDefault();
 	});
 });
