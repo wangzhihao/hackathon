@@ -36,22 +36,33 @@
               You have inventory in Amazon fulfillment centers for the items below, but do not have corresponding active offers for these products. We recommend that you take action now to relist eligible products for Fulfillment by Amazon (FBA) so that these products will be available for sale or create a removal order to have it disposed of or returned to you. <a>More</a>...
             <div class="right">
               <!-- <button id="take_action" type="button" class="btn amazon-yellow" data-toggle="collapse" href="#item_1">Yes</button> -->
-               <button id="take_action" type="button" class="btn amazon-yellow" href="#item_1">Remove</button>
-              <button type="button" class="btn" autocomplete="off">Cancel</button>
+               <button id="take_action" type="button" class="btn amazon-yellow" href="#item_1">Create Removal</button>
             </div>
           </div>
         </div>
       </div>
-      <a href="#" class="list-group-item" id="item_2">
-        <h4 class="list-group-item-heading">Inventory Health Report</h4>
+      <div class="collapse in" id="item_2">
+        <a class="list-group-item" data-toggle="collapse" href="#collapseExample2">
+        <h4 class="list-group-item-heading">Inventory Health Report<span class="badge">4</span></h4>
         <p class="list-group-item-text">Inventory Health Report on 04/01/21017 is ready, please check and download...</p>
-        <p class = "star">
-          <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-        </p>
+          <p class = "star">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+          </p>
         <p class = "remove">
           <button type="button" class="btn btn-default btn-xs">dismiss</button>
         </p>
-      </a>
+        </a>
+        <div class="collapse" id="collapseExample2">
+          <div class="well">
+             <ul class="list-group">
+              <li class="list-group-item">Your report 03-26 is ready</li>
+              <li class="list-group-item">Your report 03-24 is ready</li>
+              <li class="list-group-item">Your report 03-23 is ready</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
       <a href="#" class="list-group-item" id="item_3">
           <h4 class="list-group-item-heading">Fee Change Notification</h4>
           <p class="list-group-item-text">Important Message: Effective April 26, 2017, fees for Fulfilment by Amazon will change...</p>
@@ -75,6 +86,5 @@
           <button type="button" class="btn btn-default btn-xs">dismiss</button>
         </p>
       </a>
-    </div>
 </body>
 </html>

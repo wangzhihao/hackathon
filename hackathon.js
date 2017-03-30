@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
 	//update notifictation count
 	setInterval(function(){ 
-		var count = $("#amazon-list .list-group-item").length;
+		var count = $("#amazon-list a.list-group-item").length;
 		if(count == 0){
 			$("#sc-snes-number", window.parent.document).hide();
 		}else{
