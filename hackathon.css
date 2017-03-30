@@ -18,7 +18,7 @@
 .right {
   text-align: right; }
 
-#amazon-list #item_1.in.collapse a {
+#amazon-list #item_1.in.collapse a.list-group-item {
   background: white; }
 #amazon-list .star {
   position: absolute;
